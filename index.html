@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Euler's Formula Visualization – Force Graph</title>
+
+    <!-- Стили оформления -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #181818; /* Темный фон в стиле AI USM */
+            color: #ffffff; /* Белый текст */
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #00c8ff; /* Голубой заголовок */
+        }
+        h2 {
+            color: #cccccc;
+            font-size: 22px;
+        }
+        p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.6;
+        }
+        .formula {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffcc00; /* Желтая формула */
+        }
+        .graph-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="./inspector.css">
+</head>
+
+<body>
+    <h1>Euler's Formula Visualization – Force Graph</h1>
+
+    <p>
+        Этот проект демонстрирует <b>формулу Эйлера</b> для многогранников:
+    </p>
+    <p class="formula">V - E + F = 2</p>
+    <p>
+        где:
+        <br> <b>V</b> – число вершин
+        <br> <b>E</b> – число рёбер
+        <br> <b>F</b> – число граней
+    </p>
+
+    <h2>Как это помогает AI USM?</h2>
+    <p>
+        В системе <b>AI USM</b> эта формула применяется в <b>графовых нейросетях</b> и <b>компьютерном зрении</b>:
+    </p>
+    <p>
+        <b>1. Оптимизация сетей</b> – строит топологически оптимальные графовые структуры.<br>
+        <b>2. Графовая обработка данных</b> – анализирует медицинские отчёты.<br>
+        <b>3. Распознавание сложных связей</b> – помогает AI USM анализировать связи между элементами данных.<br>
+    </p>
+
+    <h2>Динамическая визуализация</h2>
+    
+    <!-- Графовая визуализация -->
+    <div class="graph-container">
+        <script type="module">
+            import define from "./index.js";
+            import {Runtime, Library, Inspector} from "./runtime.js";
+
+            const runtime = new Runtime();
+            const main = runtime.module(define, Inspector.into(document.body));
+        </script>
+    </div>
+
+</body>
+</html>
+
