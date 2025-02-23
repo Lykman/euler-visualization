@@ -1,0 +1,14 @@
+{
+  "name": "f6b5889147551d6e",
+  "main": "f6b5889147551d6e@15.js",
+  "version": "15.0.0",
+  "homepage": "https://observablehq.com/d/f6b5889147551d6e",
+  "author": {
+    "name": "Lykman",
+    "url": "https://observablehq.com/@lykman"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
